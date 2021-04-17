@@ -5,11 +5,11 @@ import css from './Header.css'
 const Header = () => {
     return (
         <div className="header">
-            <img src={logo} alt="site logo"/>
+            <img src={logo} alt="site logo" />
             <nav>
                 <a href="/shop">Shop</a>
-                <a href="/order-review">Order Review</a>
-                <a href="/manage-inventory">Manage Inventory</a>
+                <a href="/review">Order Review</a>
+                <a href="/manageyourinventory">Manage Inventory</a>
             </nav>
         </div>
     );
