@@ -15,6 +15,8 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 
 
 
+
+
 function App() {
   return (
     <div>
@@ -27,15 +29,18 @@ function App() {
           <Route path="/review">
             <Review></Review>
           </Route>
-          <Route exact path="/manageyourinventory">
-            <ManageInventory></ManageInventory>
-          </Route>
-          <Route path="/:productKey">
+          <Route path="/product/:productKey">
             <ProductDetails></ProductDetails>
           </Route>
+          
+          
+          <Route exact path="/manageyourinventory">
+            <ManageInventory></ManageInventory>
+          </Route>         
           <Route path="*">
             <NotFound></NotFound>
           </Route>
+         
         </Switch>
       </Router>
       
