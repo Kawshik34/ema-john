@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 const Product = (props) => {
     const { img, name, seller, price, stock ,key} = props.product;
-    console.log(props)
     return (
         <div className="product">
             <div>
@@ -20,7 +19,7 @@ const Product = (props) => {
                 <p><small>{seller}</small></p>
                 <p><small>${price}</small></p>
                 <p><small>Only {stock} left in the stock</small></p>
-                {props.showAddToCart && <button class="cart-btn"  onClick={()=>props.handleAddProduct(props.product)}><FontAwesomeIcon icon={faShoppingBag} /><span class="atc">add to cart</span></button>}
+                {props.showAddToCart && <button className="cart-btn"  onClick={()=>props.handleAddProduct(props.product)}><FontAwesomeIcon icon={faShoppingBag} /><span class="atc">add to cart</span></button>}
             </div>
         </div>
     );

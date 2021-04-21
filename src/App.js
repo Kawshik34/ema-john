@@ -24,7 +24,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/shop">
-          <Shop></Shop>
+            <Shop></Shop>
           </Route>
           <Route path="/review">
             <Review></Review>
@@ -32,19 +32,19 @@ function App() {
           <Route path="/product/:productKey">
             <ProductDetails></ProductDetails>
           </Route>
-          
-          
+
+
           <Route exact path="/manageyourinventory">
             <ManageInventory></ManageInventory>
-          </Route>         
+          </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
-         
+
         </Switch>
       </Router>
-      
-      
+
+
     </div>
   );
 }
